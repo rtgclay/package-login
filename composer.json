@@ -1,0 +1,29 @@
+{
+    "name": "smpl/login",
+    "description": "laravel custom login package",
+    "type": "library",
+    "version": "1.0.7",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Smpl\\Login\\": "src/",
+            "Smpl\\Login\\Http\\Controllers\\": "src/Http/Controllers"
+        }
+    },
+    "authors": [
+        {
+            "name": "rtgclay",
+            "email": "rtgclay@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Smpl\\Login\\LoginServiceProvider"
+            ]
+        }
+    },
+    "require": {},
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
