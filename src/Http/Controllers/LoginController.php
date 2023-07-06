@@ -12,7 +12,7 @@ class LoginController extends Controller
 {
     public function index(Request $request)
     {
-     return view('index'); 
+     return view('vendor.login.index'); 
 
     }
 
