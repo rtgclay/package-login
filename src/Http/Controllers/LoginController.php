@@ -14,16 +14,6 @@ class LoginController extends Controller
      return view('index');  
     }
 
-    protected function guard()
-    {
-        return Auth::guard(config('nova.guard'));
-    }
-
-    public function redirectPath()
-    {
-        return Nova::url(Nova::$initialPath);
-    }
-
     public function logout(Request $request)
     {
         $this->guard()->logout();
