@@ -11,7 +11,9 @@ class LoginController extends Controller
 {
     public function index(Request $request)
     {
-     return view('index');  
+        dd("Haloooo");
+     return view('index'); 
+
     }
 
     public function logout(Request $request)
