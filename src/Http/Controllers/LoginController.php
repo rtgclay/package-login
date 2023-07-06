@@ -6,12 +6,12 @@ use GuzzleHttp\RequestOptions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Routing\Controller;
 
 class LoginController extends Controller
 {
     public function index(Request $request)
     {
-        dd("Haloooo");
      return view('index'); 
 
     }
