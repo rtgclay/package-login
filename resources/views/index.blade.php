@@ -3,21 +3,29 @@
     @charset "utf-8";
 
 
-    @import url//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+    @import url //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
 
 
-    div.main{
-        background: #0264d6; /* Old browsers */
-        background: -moz-radial-gradient(center, ellipse cover,  #0264d6 1%, #1c2b5a 100%); /* FF3.6+ */
-        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#0264d6), color-stop(100%,#1c2b5a)); /* Chrome,Safari4+ */
-        background: -webkit-radial-gradient(center, ellipse cover,  #0264d6 1%,#1c2b5a 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-radial-gradient(center, ellipse cover,  #0264d6 1%,#1c2b5a 100%); /* Opera 12+ */
-        background: -ms-radial-gradient(center, ellipse cover,  #0264d6 1%,#1c2b5a 100%); /* IE10+ */
-        background: radial-gradient(ellipse at center,  #0264d6 1%,#1c2b5a 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0264d6', endColorstr='#1c2b5a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-        height:calc(100vh);
-        width:100%;
+    div.main {
+        background: #0264d6;
+        /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, #0264d6 1%, #1c2b5a 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #0264d6), color-stop(100%, #1c2b5a));
+        /* Chrome,Safari4+ */
+        background: -webkit-radial-gradient(center, ellipse cover, #0264d6 1%, #1c2b5a 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-radial-gradient(center, ellipse cover, #0264d6 1%, #1c2b5a 100%);
+        /* Opera 12+ */
+        background: -ms-radial-gradient(center, ellipse cover, #0264d6 1%, #1c2b5a 100%);
+        /* IE10+ */
+        background: radial-gradient(ellipse at center, #0264d6 1%, #1c2b5a 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0264d6', endColorstr='#1c2b5a', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
+        height: calc(100vh);
+        width: 100%;
     }
 
     [class*="fontawesome-"]:before {
@@ -28,12 +36,12 @@
 
     * {
         box-sizing: border-box;
-        margin:0px auto;
+        margin: 0px auto;
 
-    &:before,
-    &:after {
-         box-sizing: border-box;
-     }
+        &:before,
+        &:after {
+            box-sizing: border-box;
+        }
 
     }
 
@@ -69,15 +77,15 @@
     .clearfix {
         *zoom: 1;
 
-    &:before,
-    &:after {
-         content: ' ';
-         display: table;
-     }
+        &:before,
+        &:after {
+            content: ' ';
+            display: table;
+        }
 
-    &:after {
-         clear: both;
-     }
+        &:after {
+            clear: both;
+        }
 
     }
 
@@ -90,21 +98,25 @@
 
     /* ---------- LOGIN ---------- */
 
-    #login form{
+    #login form {
         width: 250px;
     }
-    #login, .logo{
-        display:inline-block;
-        width:40%;
+
+    #login,
+    .logo {
+        display: inline-block;
+        width: 40%;
     }
-    #login{
-        border-right:1px solid #fff;
+
+    #login {
+        border-right: 1px solid #fff;
         padding: 0px 22px;
         width: 59%;
     }
-    .logo{
-        color:#fff;
-        font-size:50px;
+
+    .logo {
+        color: #fff;
+        font-size: 50px;
         line-height: 125px;
     }
 
@@ -115,7 +127,7 @@
         display: block;
         float: left;
         height: 50px;
-        font-size:24px;
+        font-size: 24px;
         line-height: 50px;
         text-align: center;
         width: 50px;
@@ -124,13 +136,16 @@
     #login form input {
         height: 50px;
     }
-    fieldset{
-        padding:0;
-        border:0;
+
+    fieldset {
+        padding: 0;
+        border: 0;
         margin: 0;
 
     }
-    #login form input[type="text"], input[type="password"] {
+
+    #login form input[type="text"],
+    input[type="password"] {
         background-color: #fff;
         border-radius: 0px 3px 3px 0px;
         color: #000;
@@ -155,13 +170,14 @@
         background-color: #d44179;
     }
 
-    #login > p {
+    #login>p {
         text-align: center;
     }
 
-    #login > p span {
+    #login>p span {
         padding-left: 5px;
     }
+
     .middle {
         display: flex;
         width: 600px;
@@ -171,7 +187,6 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-
 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <div class="main">
@@ -194,13 +209,16 @@
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <fieldset class="clearfix">
-                            <p ><span class="fa fa-user"></span><input type="text"  Placeholder="NRP" value="{{ old('nrp') }}" name="nrp" id="nrp" required autofocus>
+                            <p><span class="fa fa-user"></span><input type="text" Placeholder="NRP"
+                                    value="{{ old('nrp') }}" name="nrp" id="nrp" required autofocus>
                             </p> <!-- JS because of IE support; better: placeholder="Username" -->
-                            <p><span class="fa fa-lock"></span><input type="password"  Placeholder="Password" name="password" id="password" required>
+                            <p><span class="fa fa-lock"></span><input type="password" Placeholder="Password"
+                                    name="password" id="password" required>
                             </p> <!-- JS because of IE support; better: placeholder="Password" -->
 
                             <div>
-                                <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="MASUK"></span>
+                                <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit"
+                                        value="MASUK"></span>
                             </div>
 
                         </fieldset>
@@ -210,7 +228,7 @@
 
                 </div> <!-- end login -->
                 <div class="logo">SMPL
-                    
+
                     <div class="clearfix"></div>
                 </div>
 
