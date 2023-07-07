@@ -227,7 +227,7 @@
                     <div class="clearfix"></div>
 
                 </div> <!-- end login -->
-                <div class="logo">SMPL
+                <div class="logo">SMPL 123
 
                     <div class="clearfix"></div>
                 </div>
