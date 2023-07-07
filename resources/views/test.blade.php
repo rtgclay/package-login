@@ -8,9 +8,11 @@
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <div class="bg-900-red">
+        <h1 class="text-3xl font-bold underline">
+            Hello world!
+        </h1>
+    </div>
 </body>
 
 </html>
