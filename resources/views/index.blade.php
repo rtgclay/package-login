@@ -189,7 +189,7 @@
 <!------ Include the above in your HEAD tag ---------->
 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<div class="main">
+<div class="main bg-black">
     <div class="container">
         <center>
             <div class="middle">

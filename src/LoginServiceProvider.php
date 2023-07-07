@@ -32,12 +32,5 @@ class LoginServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../resources/views' => resource_path('views/vendor/login')
         ], 'views');
-
-        $this->publishes([
-            __DIR__ . '/../resources/config/login.php' => config_path('login.php')
-        ], 'config');
-        $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/vendor/test')
-        ], 'views');
     }
 }
